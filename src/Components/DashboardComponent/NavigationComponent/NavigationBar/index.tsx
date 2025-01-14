@@ -46,7 +46,8 @@ export default function NavigationComponents(): JSX.Element {
                             >
                                 <MenuOutlined />
                             </IconButton>
-                            <Typography variant="h6">IndDocument</Typography>
+                            <Typography variant="h6">NgoPi | </Typography>
+                            <Typography variant="subtitle1">NgodingPintar</Typography>
                         </Box>
                         {auth && (
                             <div>
@@ -58,7 +59,7 @@ export default function NavigationComponents(): JSX.Element {
                                     color="inherit"
                                     onClick={menuAlgo}
                                 >
-                                    <AccountCircle />
+                                    <AccountCircle fontSize="large" />
                                 </IconButton>
                                 <Menu
                                     id="menu-appbar"
@@ -87,7 +88,7 @@ export default function NavigationComponents(): JSX.Element {
             {isMenuOpen && (
                 <>
                     <Portal>
-                        <Box sx={(theme) => ({ zIndex: theme.zIndex.drawer + 5, position: "fixed",left: 0,top:14,maxHeight:'calc(100vw-64px)' })}>
+                        <Box sx={(theme) => ({ zIndex: theme.zIndex.drawer + 5, position: "fixed",left: 0,top:0,maxHeight:'calc(100vw-64px)' })}>
                             <ListComponent />
                         </Box>
                     </Portal>
