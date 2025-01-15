@@ -15,7 +15,7 @@ export default function CardComponent({title,href,url} : propsType):JSX.Element{
                     <Box>
                         <img src={url} width={"150px"}/>
                     </Box>
-                <Typography color="secondary" variant="h6">{title}</Typography>
+                <Typography color="secondary" variant="subtitle2">{title}</Typography>
                 </CardContent>
                 <Button sx={{p:2}} variant="contained" color="secondary" href={href}>Pelajari</Button>
             </Fragment>
